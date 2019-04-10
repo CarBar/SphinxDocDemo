@@ -1,0 +1,12 @@
+FROM crema/sphinx:1.0
+
+LABEL maintainer.1="Carter Barnes<carter.barnes@cremadevelopment.com>"
+
+RUN apk --update --no-cache add \
+    bash \
+    coreutils \
+    figlet \
+    git \
+    make \
+    openssh \
+    && apk upgrade
