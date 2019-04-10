@@ -1,0 +1,12 @@
+FROM python:3-alpine
+
+LABEL maintainer.1="Carter Barnes<carter.barnes@cremadevelopment.com>"
+
+RUN pip install \
+        m2r \
+        sphinx \
+        sphinx_rtd_theme
+
+WORKDIR /var/docs
+
+CMD ["sphinx"]
